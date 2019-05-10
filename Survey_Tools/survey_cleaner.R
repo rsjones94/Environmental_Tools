@@ -25,9 +25,9 @@ library(xlsx)
 ########### USER INPUT
 # note that filepaths for windows users use forward slashes, while Linux and Mac filepaths use backslashes
 
-mywd = "X:\\2016\\161604043A1 Neelys Bend\\Monitoring\\As-Built\\Raw\\02-26-2019" # filepath to folder where your data is
+mywd = "X:\\2014\\16146532_TDOT NCSD\\16146532B_SR76\\Survey\\April 2019\\Raw" # filepath to folder where your data is
 
-datasource = 'neelys_as_built_02-26-2019' # filename of your input data (MUST be .xlsx)
+datasource = 'sr76+4-15-19' # filename of your input data (MUST be .xlsx)
 
 ########### END USER INPUT
 
