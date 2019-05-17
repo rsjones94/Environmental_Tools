@@ -5,8 +5,6 @@ library(xlsx)
 ## get the data from the spreadsheet
 fname = file.choose()
 
-#fname = "X:\\Environmental Tools\\Survey Workup Tools\\Hardpoint_Worksheet.xlsx"
-
 data = read.xlsx(fname, sheetIndex = 1, header = TRUE, stringsAsFactors = FALSE)
 
 # separate the data into the static survey (datapull1) and the survey to be stretched (datapull2)
@@ -151,9 +149,9 @@ adjustedSurvey[,1] = adjustedSurveyX
 plot(NULL,xlim=xrange,ylim=yrange,xlab = "Station (ft)", ylab = "Elevation (ft)", main = "Survey Adjustments")
 
 points(datapull1, col = 'red')
-points(adjustedSurvey, col = 'blue')
+points(adjustedSurvey, col = 'mediumpurple')
 lines(datapull1, col = 'red')
-lines(adjustedSurvey, col = 'blue')
+lines(adjustedSurvey, col = 'mediumpurple')
 
 legendx = xrange[1]+(xrange[2]-xrange[1])*.6
 legendy = yrange[1]+(yrange[2]-yrange[1])*.9
@@ -164,7 +162,7 @@ legendy = yrange[1]+(yrange[2]-yrange[1])*.9
 
 abline(v=datapull1[firstSurveySnapIndex,1], col = 'mediumpurple')
 
-legend(legendx,legendy, c("Survey 1", "Adjusted Survey"), lty = c(1,1), col = c("Red", "Blue"))
+legend(legendx,legendy, c("Survey 1", "Adjusted Survey"), lty = c(1,1), col = c("Red", "mediumpurple"))
 
 
 

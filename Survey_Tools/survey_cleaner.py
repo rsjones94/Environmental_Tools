@@ -16,7 +16,7 @@ import pyfluv
 
 
 file_location = r'C:\Users\sky.jones\Desktop\nstTest'
-file_name = r'wpr_myr5_adjusted' # must be a .csv file, but don't write .csv
+file_name = r'wpr_myr5_adjusted' # must be a .csv file, but don't write the extension.
 
 xs_append = "_CROSSES"
 pro_append = "_PROFILES"
