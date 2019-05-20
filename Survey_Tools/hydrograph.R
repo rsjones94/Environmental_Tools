@@ -37,7 +37,7 @@ rainfall = as.data.frame(rainfall)
 
 nGauges = ncol(gaugeData)/2
 if (ncol(gaugeData) %% 2 != 0) {
-  print('Error in gauge data. Execution halted.')
+  print('Error in gauge data. Make sure each gauge has a date-time and depth column. Execution halted.')
 }
 
 collate.hydro.data = function(position) {
